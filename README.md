@@ -83,8 +83,8 @@ E-commerce, prise de rendez-vous, espace client.
 </p>
 
 <p align="center">
-  <img src="assets/cards/streak.svg" width="415" alt="Série de contributions GitHub" />
-  <img src="assets/cards/productive-time.svg" width="415" alt="Heures de commits par jour, UTC+1" />
+  <img src="assets/cards/streak.svg" width="415" height="195" alt="Série de contributions GitHub" />
+  <img src="assets/cards/productive-time.svg" width="415" height="195" alt="Heures de commits par jour, UTC+1" />
 </p>
 
 <p align="center">
