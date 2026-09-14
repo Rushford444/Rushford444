@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="48" viewBox="0 0 850 48" role="img" aria-label="Trait d'encre vermillon">
+  <title>divider — vague d'encre vermillon</title>
+  <style>
+    .ink {
+      stroke-dasharray: 100;
+      stroke-dashoffset: 0;
+      animation: draw 7s ease-in-out infinite;
+    }
+    /* 0-45% : le trait se dessine · 45-72% : pause pleine encre · 72-100% : il s'efface vers la droite */
+    @keyframes draw {
+      0%   { stroke-dashoffset: 100; }
+      45%  { stroke-dashoffset: 0; }
+      72%  { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -100; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  <path class="ink" pathLength="100" fill="none" stroke="#e16c37" stroke-width="3" stroke-linecap="round"
+        d="M14,24 C 84,4 154,44 224,24 C 294,4 364,44 434,24 C 504,4 574,44 644,24 C 714,4 784,44 836,24"/>
+</svg>
