@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="96" viewBox="0 0 660 96" role="img" aria-label="Just a dev who ships.">
+  <title>tagline — Just a dev who ships.</title>
+  <style>
+    text {
+      font-family: ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace;
+      font-weight: 700;
+      font-size: 34px;
+    }
+    .letter { opacity: 1; }
+    .cursor {
+      transform: translate(430px, 0);
+      opacity: 1;
+    }
+    /* Frappe : 21 lettres, un créneau par lettre, toutes dans la même boucle de 5.2s
+       (0-55% frappe · 55-88% pause · 88-90% fondu · 90-100% silence) */
+    .letter { animation: 5.2s linear infinite both; }
+    .cursor {
+      animation: cmove 5.2s steps(21, end) infinite, cblink 5.2s steps(1, end) infinite;
+    }
+    @keyframes l0  { 0% {opacity:0} 0.15%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l1  { 0%,2.62% {opacity:0} 2.77%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l2  { 0%,5.24% {opacity:0} 5.39%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l3  { 0%,7.86% {opacity:0} 8.01%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l4  { 0%,10.48% {opacity:0} 10.63%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l5  { 0%,13.1% {opacity:0} 13.25%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l6  { 0%,15.71% {opacity:0} 15.86%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l7  { 0%,18.33% {opacity:0} 18.48%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l8  { 0%,20.95% {opacity:0} 21.1%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l9  { 0%,23.57% {opacity:0} 23.72%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l10 { 0%,26.19% {opacity:0} 26.34%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l11 { 0%,28.81% {opacity:0} 28.96%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l12 { 0%,31.43% {opacity:0} 31.58%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l13 { 0%,34.05% {opacity:0} 34.2%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l14 { 0%,36.67% {opacity:0} 36.82%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l15 { 0%,39.29% {opacity:0} 39.44%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l16 { 0%,41.9% {opacity:0} 42.05%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l17 { 0%,44.52% {opacity:0} 44.67%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l18 { 0%,47.14% {opacity:0} 47.29%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l19 { 0%,49.76% {opacity:0} 49.91%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes l20 { 0%,52.38% {opacity:0} 52.53%,88% {opacity:1} 90%,100% {opacity:0} }
+    @keyframes cmove {
+      0%   { transform: translate(0, 0); }
+      55%  { transform: translate(430px, 0); }
+      100% { transform: translate(430px, 0); }
+    }
+    @keyframes cblink {
+      0%,11.9%   { opacity: 1; }
+      12%,23.9%  { opacity: 0; }
+      24%,36.9%  { opacity: 1; }
+      38%,49.9%  { opacity: 0; }
+      50%,61.9%  { opacity: 1; }
+      62%,74.9%  { opacity: 0; }
+      76%,87.9%  { opacity: 1; }
+      88%,100%   { opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  <g><text x="108" y="62" xml:space="preserve"><tspan class="letter" style="animation-name: l0" fill="#f4e8dd">J</tspan><tspan class="letter" style="animation-name: l1" fill="#f4e8dd">u</tspan><tspan class="letter" style="animation-name: l2" fill="#f4e8dd">s</tspan><tspan class="letter" style="animation-name: l3" fill="#f4e8dd">t</tspan><tspan class="letter" style="animation-name: l4" fill="#f4e8dd"> </tspan><tspan class="letter" style="animation-name: l5" fill="#f4e8dd">a</tspan><tspan class="letter" style="animation-name: l6" fill="#f4e8dd"> </tspan><tspan class="letter" style="animation-name: l7" fill="#f4e8dd">d</tspan><tspan class="letter" style="animation-name: l8" fill="#f4e8dd">e</tspan><tspan class="letter" style="animation-name: l9" fill="#f4e8dd">v</tspan><tspan class="letter" style="animation-name: l10" fill="#f4e8dd"> </tspan><tspan class="letter" style="animation-name: l11" fill="#f4e8dd">w</tspan><tspan class="letter" style="animation-name: l12" fill="#f4e8dd">h</tspan><tspan class="letter" style="animation-name: l13" fill="#f4e8dd">o</tspan><tspan class="letter" style="animation-name: l14" fill="#f4e8dd"> </tspan><tspan class="letter" style="animation-name: l15" fill="#e16c37">s</tspan><tspan class="letter" style="animation-name: l16" fill="#e16c37">h</tspan><tspan class="letter" style="animation-name: l17" fill="#e16c37">i</tspan><tspan class="letter" style="animation-name: l18" fill="#e16c37">p</tspan><tspan class="letter" style="animation-name: l19" fill="#e16c37">s</tspan><tspan class="letter" style="animation-name: l20" fill="#e16c37">.</tspan></text></g>
+  <rect class="cursor" x="108" y="30" width="16" height="40" fill="#e16c37"/>
+</svg>

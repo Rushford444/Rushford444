@@ -2,7 +2,7 @@
 
 <img src="assets/banner.jpeg" width="850" alt="Rushford444 — bannière sumi-e" />
 
-### Just a dev who ships.
+<img src="assets/anim/intro-tapage.svg" width="620" alt="Just a dev who ships." />
 
 **FR** — Je construis des produits web complets et des systèmes d'agents IA qui livrent vraiment.
 
@@ -10,16 +10,43 @@
 
 </div>
 
----
+<p align="center">
+  <img src="assets/anim/divider-vague.svg" width="850" alt="Trait d'encre vermillon" />
+</p>
 
 ## 🛠️ Ce que je construis · What I build
 
-- 🔮 **Agora** — plateforme d'intelligence collective : un concile de LLM qui délibère, de la recherche multi-agents, une veille contradictoire.
-  *EN — collective-intelligence platform: an LLM council that deliberates, multi-agent research, contradiction-aware monitoring.*
-- 🎬 le site de mon propre studio créatif — 3D temps réel (three.js), GSAP, transitions sur mesure.
-  *EN — my own creative studio site — real-time 3D (three.js), GSAP, handcrafted transitions.*
-- 🧵 un site complet pour un atelier de couture — e-commerce, prise de rendez-vous, espace client.
-  *EN — a full site for a sewing atelier — e-commerce, booking, client space.*
+*Chaque projet se déplie — click to expand.*
+
+<details>
+<summary>🔮 <strong>Agora</strong> — plateforme d'intelligence collective</summary>
+<br>
+
+Un concile de LLM qui délibère, de la recherche multi-agents, une veille contradictoire.
+
+*EN — collective-intelligence platform: an LLM council that deliberates, multi-agent research, contradiction-aware monitoring.*
+
+</details>
+
+<details>
+<summary>🎬 <strong>Studio créatif</strong> — le site de mon propre studio</summary>
+<br>
+
+3D temps réel (three.js), GSAP, transitions sur mesure.
+
+*EN — my own creative studio site — real-time 3D (three.js), GSAP, handcrafted transitions.*
+
+</details>
+
+<details>
+<summary>🧵 <strong>Atelier de couture</strong> — un site complet, de la boutique à l'espace client</summary>
+<br>
+
+E-commerce, prise de rendez-vous, espace client.
+
+*EN — a full site for a sewing atelier — e-commerce, booking, client space.*
+
+</details>
 
 ## 🧰 Stack · Toolkit
 
@@ -56,7 +83,17 @@
 
 Des mini-projets publics arrivent — jeux, outils, expériences front. *EN — small public experiments coming: games, tools, front-end toys.*
 
----
+<p align="center">
+  <img src="assets/anim/chat-idle.svg" width="300" alt="Neko samurai — héros du jeu à venir" />
+  &nbsp;&nbsp;
+  <img src="assets/anim/drop-pulse.svg" width="56" alt="Goutte d'encre vermillon qui pulse" />
+</p>
+
+*Le héros du premier jeu s'échauffe. EN — the first game's hero is warming up.*
+
+<p align="center">
+  <img src="assets/anim/divider-vague.svg" width="850" alt="Trait d'encre vermillon" />
+</p>
 
 <div align="center">
 
