@@ -82,8 +82,10 @@ identique aux tuiles du lot). Documentée dans le fichier.
 - ✅ Groupes d'icônes présents (4, ≤ 10/ligne) ; tuile Phaser locale
 - ✅ XML valide (`xml.dom.minidom`) : `neko-samurai.svg`, `phaser.svg`
 - ✅ 2 frames neko : coins alpha 0, AE > 0
-- ✅ curl raw sur `refs/heads/lane/profil-awwwards-v2` : README + 13 chemins → 200
-      (exécuté après push, voir preuves)
+- ✅ curl raw sur `refs/heads/lane/profil-awwwards-v2` : README → 200, et les
+      13 src relatifs → 200 ; snake (ref `output`) → 200 ; les 4 rows
+      skillicons → 200 avec un user-agent navigateur (urllib reçoit un 403
+      anti-bot du CDN, mais le rendu réel navigateur est prouvé en captures)
 - ✅ Captures avant/après dans `preuves-profils/v2/`
 
 ## Fichiers modifiés / créés
