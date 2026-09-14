@@ -17,8 +17,11 @@ jobs:
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Rushford444
+          # case vide = encre du profil, puis rampe chaude vers le vermillon —
+          # pas de variant « gel slots » chez Platane/snk (cases mangées =
+          # cases vides, voir DONE-PROFIL-AWWWARDS.md).
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#e16c37&color_dots=#2b2320,#4a3126,#7a4429,#b35a2e,#e16c37
+            dist/github-contribution-grid-snake.svg?color_snake=#e16c37&color_dots=#1a1412,#2b2320,#4a3126,#7a4429,#e16c37
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output

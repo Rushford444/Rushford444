@@ -22,10 +22,12 @@ jobs:
       - uses: actions/checkout@v4
 
       # Streak — Action officielle du projet (fetch → fichier, commit séparé).
+      # Palette du profil : encre #1a1412 · vermillon #e16c37 · texte #f4e8dd
+      # · sable #ddbba2 · dates #8a7a70.
       - name: Streak stats
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
-          options: 'user=${{ github.repository_owner }}&locale=fr&hide_border=true&background=29201e&ring=e16c37&fire=e16c37&currStreakLabel=e16c37&currStreakNum=f4e8dd&sideNums=f4e8dd&sideLabels=ddbba2&dates=8a7a70&disable_animations=true'
+          options: 'user=${{ github.repository_owner }}&locale=fr&hide_border=true&background=1a1412&border=e16c37&stroke=e16c37&ring=e16c37&fire=e16c37&currStreakLabel=e16c37&currStreakNum=f4e8dd&currTotalNum=f4e8dd&sideNums=f4e8dd&sideLabels=ddbba2&dates=8a7a70&disable_animations=true'
           path: assets/cards/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -37,11 +39,16 @@ jobs:
         run: |
           set -euo pipefail
           base="https://github-profile-summary-cards.vercel.app/api/cards"
-          query="username=${{ github.repository_owner }}&theme=github_dark&bg_color=29201e&title_color=e16c37&text_color=f4e8dd&border_color=e16c37&icon_color=e16c37&chart_color=e16c37&utcOffset=1"
+          query="username=${{ github.repository_owner }}&theme=github_dark&bg_color=1a1412&title_color=e16c37&text_color=f4e8dd&border_color=ddbba2&icon_color=e16c37&chart_color=e16c37&utcOffset=1"
           for card in profile-details repos-per-language most-commit-language stats productive-time; do
             curl -fsSL --retry 3 --retry-delay 10 --max-time 60 "$base/$card?$query" -o "assets/cards/$card.svg"
             test -s "assets/cards/$card.svg"
           done
+          # La rampe des camemberts langages est codée en dur côté API (thème
+          # github_dark) et n'est pas câblable par paramètre — on normalise les
+          # deux couleurs orphelines vers la rampe chaude du profil.
+          sed -i 's/#586e75/#b35a2e/g; s/#701516/#7a4429/g' \
+            assets/cards/repos-per-language.svg assets/cards/most-commit-language.svg
 
       - name: Commit & push si diff
         run: |
