@@ -1,0 +1,27 @@
+name: snake
+on:
+  schedule:
+    - cron: "0 3 * * *" # chaque nuit — le snake mange le graphe du jour
+  workflow_dispatch:
+  push:
+    branches: [master]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Rushford444
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=#e16c37&color_dots=#2b2320,#4a3126,#7a4429,#b35a2e,#e16c37
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
