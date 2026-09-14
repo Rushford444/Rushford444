@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 256" role="img" aria-label="Phaser">
+  <title>Phaser</title>
+  <!-- Tuile maison, style skillicons (rect #242938 rx60) : leur API casse sur i=phaser (injecte "undefined") -->
+  <rect width="256" height="256" rx="60" fill="#242938"/>
+  <g fill="#42ADF5">
+    <rect x="58" y="30" width="28" height="196"/>
+    <rect x="86" y="30" width="84" height="28"/>
+    <rect x="142" y="58" width="28" height="56"/>
+    <rect x="86" y="114" width="84" height="28"/>
+  </g>
+</svg>
