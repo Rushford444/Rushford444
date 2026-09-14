@@ -84,9 +84,7 @@ E-commerce, prise de rendez-vous, espace client.
 Des mini-projets publics arrivent — jeux, outils, expériences front. *EN — small public experiments coming: games, tools, front-end toys.*
 
 <p align="center">
-  <img src="assets/anim/chat-idle.svg" width="300" alt="Neko samurai — héros du jeu à venir" />
-  &nbsp;&nbsp;
-  <img src="assets/anim/drop-pulse.svg" width="56" alt="Goutte d'encre vermillon qui pulse" />
+  <img src="assets/anim/neko-samurai.svg" width="300" alt="Neko samurai — sprite réel du jeu SUMI, héros du playground" />
 </p>
 
 *Le héros du premier jeu s'échauffe. EN — the first game's hero is warming up.*
@@ -97,12 +95,8 @@ Des mini-projets publics arrivent — jeux, outils, expériences front. *EN — 
 
 <div align="center">
 
-<pre>
-     _____     ____
-    /      \  |  o |      just a dev who ships
-   |        |/ ___\|     encre #29201e · vermillon #e16c37
-   |_________/           le snake garde le graphe
-   |_|_| |_|_|
-</pre>
+<img src="assets/anim/drop-pulse.svg" width="36" alt="Goutte d'encre vermillon qui pulse" />
+
+<sub><em>l'encre sèche, le code reste.</em> — the ink dries, the code remains.</sub>
 
 </div>
