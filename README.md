@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.jpeg" width="850" alt="Rushford444 — bannière sumi-e" />
+<img src="assets/hero-diorama.png" width="100%" alt="Diorama sumi-e : un torii vermillon dans la brume, le soleil se lève derrière le neko samurai, lanternes de pierre et érables en encre" />
 
 <img src="assets/anim/intro-tapage.svg" width="620" alt="Just a dev who ships." />
 
