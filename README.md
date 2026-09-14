@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="assets/banner.jpeg" width="850" alt="Eikichi Onizuka au feutre, portrait sumi-e sur fond vermillon" />
+
+<p align="center"><br><br></p>
+
 <img src="assets/hero-diorama.png" width="100%" alt="Diorama sumi-e : un torii vermillon dans la brume, le soleil se lève derrière le neko samurai, lanternes de pierre et érables en encre" />
 
 <img src="assets/anim/intro-tapage.svg" width="620" alt="Just a dev who ships." />
@@ -50,25 +54,41 @@ E-commerce, prise de rendez-vous, espace client.
 
 ## 🧰 Stack · Toolkit
 
+<p align="center"><sub><strong>Langages</strong></sub></p>
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,react,nextjs,nodejs,rails,postgres,docker&theme=dark" alt="TypeScript, React, Next.js, Node.js, Ruby on Rails, PostgreSQL, Docker" />
-  </a>
+  <img src="https://skillicons.dev/icons?i=ts,ruby&theme=dark" alt="TypeScript, Ruby" />
+</p>
+
+<p align="center"><sub><strong>Front</strong></sub></p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind&theme=dark" alt="React, Next.js, Tailwind CSS" />
+  <img src="assets/icons/phaser.svg" height="48" alt="Phaser" />
+</p>
+
+<p align="center"><sub><strong>Back &amp; Data</strong></sub></p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,rails,postgres&theme=dark" alt="Node.js, Ruby on Rails, PostgreSQL" />
+</p>
+
+<p align="center"><sub><strong>Outils &amp; Infra</strong></sub></p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=docker,git,github&theme=dark" alt="Docker, Git, GitHub" />
 </p>
 
 ## 📊 Stats · Activity
 
 <p align="center">
-  <img src="assets/cards/profile-details.svg" width="850" alt="Profil GitHub — Rushford444" />
+  <img src="assets/cards/most-commit-language.svg" width="415" alt="Langages les plus commités" />
+  <img src="assets/cards/stats.svg" width="415" alt="Statistiques GitHub — commits, PRs, issues, contributions" />
 </p>
 
 <p align="center">
-  <img src="assets/cards/most-commit-language.svg" width="425" alt="Langages les plus commités" />
-  <img src="assets/cards/stats.svg" width="425" alt="Statistiques GitHub" />
+  <img src="assets/cards/streak.svg" width="415" height="195" alt="Série de contributions GitHub" />
+  <img src="assets/cards/productive-time.svg" width="415" height="195" alt="Heures de commits par jour, UTC+1" />
 </p>
 
 <p align="center">
-  <img src="assets/cards/streak.svg" width="495" alt="Série de contributions GitHub" />
+  <img src="assets/cards/profile-details.svg" width="780" alt="Profil GitHub — Rushford444 : contributions de l'année, repos, ancienneté" />
 </p>
 
 ## 🐍 Snake
