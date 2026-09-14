@@ -2,10 +2,6 @@
 
 <img src="assets/banner.jpeg" width="850" alt="Eikichi Onizuka au feutre, portrait sumi-e sur fond vermillon" />
 
-<p align="center"><br><br></p>
-
-<img src="assets/hero-diorama.png" width="100%" alt="Diorama sumi-e : un torii vermillon dans la brume, le soleil se lève derrière le neko samurai, lanternes de pierre et érables en encre" />
-
 <img src="assets/anim/intro-tapage.svg" width="620" alt="Just a dev who ships." />
 
 **FR** — Je construis des produits web complets et des systèmes d'agents IA qui livrent vraiment.
