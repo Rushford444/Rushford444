@@ -1,0 +1,56 @@
+name: profile-cards
+
+# Régénère les cartes stats self-hostées dans assets/cards/ — la nuit à 3 h UTC
+# et à la demande. Les SVG sont commités : le profil ne dépend d'aucun CDN externe.
+on:
+  schedule:
+    - cron: "0 3 * * *" # chaque nuit, aligné sur snake.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      # Streak — Action officielle du projet (fetch → fichier, commit séparé).
+      - name: Streak stats
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: 'user=${{ github.repository_owner }}&locale=fr&hide_border=true&background=29201e&ring=e16c37&fire=e16c37&currStreakLabel=e16c37&currStreakNum=f4e8dd&sideNums=f4e8dd&sideLabels=ddbba2&dates=8a7a70&disable_animations=true'
+          path: assets/cards/streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Summary cards — l'Action officielle vn7n24fzkq ne supporte pas les couleurs
+      # custom (inputs: USERNAME/THEME/ANIMATION/... uniquement), on passe donc par
+      # l'API officielle du projet avec la palette du profil (docs du projet :
+      # title_color, text_color, bg_color, border_color, icon_color, chart_color).
+      - name: Summary cards (palette encre/vermillon)
+        run: |
+          set -euo pipefail
+          base="https://github-profile-summary-cards.vercel.app/api/cards"
+          query="username=${{ github.repository_owner }}&theme=github_dark&bg_color=29201e&title_color=e16c37&text_color=f4e8dd&border_color=e16c37&icon_color=e16c37&chart_color=e16c37&utcOffset=1"
+          for card in profile-details repos-per-language most-commit-language stats productive-time; do
+            curl -fsSL --retry 3 --retry-delay 10 --max-time 60 "$base/$card?$query" -o "assets/cards/$card.svg"
+            test -s "assets/cards/$card.svg"
+          done
+
+      - name: Commit & push si diff
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards
+          if git diff --cached --quiet; then
+            echo "Aucun changement — rien à committer."
+          else
+            git commit -m "profil(cards): refresh nocturne des stats"
+            git push
+          fi
