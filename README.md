@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.jpeg" width="850" alt="Rushford444 — bannière sumi-e" />
+<img src="assets/hero-diorama.png" width="100%" alt="Diorama sumi-e : un torii vermillon dans la brume, le soleil se lève derrière le neko samurai, lanternes de pierre et érables en encre" />
 
 <img src="assets/anim/intro-tapage.svg" width="620" alt="Just a dev who ships." />
 
@@ -84,9 +84,7 @@ E-commerce, prise de rendez-vous, espace client.
 Des mini-projets publics arrivent — jeux, outils, expériences front. *EN — small public experiments coming: games, tools, front-end toys.*
 
 <p align="center">
-  <img src="assets/anim/chat-idle.svg" width="300" alt="Neko samurai — héros du jeu à venir" />
-  &nbsp;&nbsp;
-  <img src="assets/anim/drop-pulse.svg" width="56" alt="Goutte d'encre vermillon qui pulse" />
+  <img src="assets/anim/neko-samurai.svg" width="300" alt="Neko samurai — sprite réel du jeu SUMI, héros du playground" />
 </p>
 
 *Le héros du premier jeu s'échauffe. EN — the first game's hero is warming up.*
@@ -97,12 +95,8 @@ Des mini-projets publics arrivent — jeux, outils, expériences front. *EN — 
 
 <div align="center">
 
-<pre>
-     _____     ____
-    /      \  |  o |      just a dev who ships
-   |        |/ ___\|     encre #29201e · vermillon #e16c37
-   |_________/           le snake garde le graphe
-   |_|_| |_|_|
-</pre>
+<img src="assets/anim/drop-pulse.svg" width="36" alt="Goutte d'encre vermillon qui pulse" />
+
+<sub><em>l'encre sèche, le code reste.</em> — the ink dries, the code remains.</sub>
 
 </div>
