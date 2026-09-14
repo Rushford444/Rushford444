@@ -40,3 +40,8 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rushford444/Rushford444/output/github-contribution-grid-snake.svg" />
   <img alt="snake mange mon graphe de contributions" src="https://raw.githubusercontent.com/Rushford444/Rushford444/output/github-contribution-grid-snake.svg" />
 </picture>
+
+## 🧪 Playground
+
+Des mini-projets publics arrivent — jeux, outils, expériences front. *EN — small public experiments coming: games, tools, front-end toys.*
+
